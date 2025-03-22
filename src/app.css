@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'AvenirNext';
+		src: local('AvenirNext'),
+			url('/fonts/AvenirNext/AvenirNextLTPro-Regular.otf');
+		font-weight: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'AvenirNext';
+		src: local('AvenirNext Bold'),
+			url('/fonts/AvenirNext/AvenirNextLTPro-Bold.otf');
+		font-weight: bold;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'AvenirNext';
+		src: local('AvenirNext Italic'),
+			url('/fonts/AvenirNext/AvenirNextLTPro-It.otf');
+		font-weight: normal;
+		font-display: swap;
+        font-style: italic;
+	}
+}
