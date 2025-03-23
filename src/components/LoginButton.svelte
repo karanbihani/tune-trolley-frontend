@@ -16,7 +16,7 @@
 	on:click={login}
 	class="flex items-center justify-center 
            rounded-[50px] border-[1.5px]
-           border-[#cf63fd] bg-[#B416F6] px-[30px] 
+           border-[#1DB954] bg-[#111111] px-[30px] 
            py-[8px]
            text-[10px] font-medium text-white shadow-md
            backdrop-blur-[112px] transition-all duration-300 hover:scale-105

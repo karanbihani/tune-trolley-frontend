@@ -96,7 +96,7 @@
 				</div>
 				<Button.Root
 					on:click={() => addSong(song.id)}
-					class="h-9 rounded-lg bg-[#5822EE] px-8 py-2 text-white transition hover:bg-[#3730a3]"
+					class="h-9 rounded-lg bg-[#1DB954] px-8 py-2 text-white transition hover:bg-[#3730a3]"
 				>
 					Add
 				</Button.Root>

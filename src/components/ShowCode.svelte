@@ -17,7 +17,9 @@
 <Dialog.Root>
 	<Dialog.Trigger
 		class={`flex w-full flex-col items-center gap-4 rounded-lg p-2 font-semibold transition md:ml-auto md:w-auto md:flex-row ${
-			isOwner ? 'bg-white text-[#5822EE] hover:bg-gray-300' : 'bg-[#5822EE] text-white px-4 hover:bg-[#3730a3]'
+			isOwner
+				? 'bg-white text-[#1DB954] hover:bg-gray-300'
+				: 'bg-[#1DB954] px-4 text-white hover:bg-[#3730a3]'
 		}`}
 	>
 		Show Code

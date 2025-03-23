@@ -26,7 +26,7 @@
 <div class="flex h-screen flex-col md:flex-row">
 	<!-- Sidebar -->
 	<div
-		class="fixed hidden h-screen w-full md:w-72 lg:w-96 flex-col items-center justify-between p-4 md:flex"
+		class="fixed hidden h-screen w-full flex-col items-center justify-between p-4 md:flex md:w-72 lg:w-96"
 		style="background-image: url('{side_pane_doodle}');"
 	>
 		<div class="flex w-full flex-col items-center">
@@ -62,7 +62,7 @@
 	</div>
 
 	<!-- Mobile Navigation -->
-	<div class="flex h-16 w-full flex-row bg-[#6834F7] md:hidden lg:hidden">
+	<div class="flex h-16 w-full flex-row bg-[#1DB954] md:hidden lg:hidden">
 		<Button.Root
 			on:click={gotoHome}
 			class="flex w-full flex-row items-center justify-center rounded-lg p-4 transition hover:bg-white/20"

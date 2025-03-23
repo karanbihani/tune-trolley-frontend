@@ -93,7 +93,7 @@
 			class="evolving-text-shadow text-center text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl"
 			in:fade={{ duration: 1000 }}
 		>
-			Welcome to SoundCrowd
+			Welcome to TuneTrolley
 		</h1>
 	{/if}
 </div>
@@ -115,13 +115,13 @@
 
 	@keyframes textShadow {
 		0% {
-			text-shadow: 1px 1px 0px #da84fe;
+			text-shadow: 1px 1px 0px #1DB954;
 		}
 		50% {
-			text-shadow: 2px 2px 1px #f674a2;
+			text-shadow: 2px 2px 1px #1DB954;
 		}
 		100% {
-			text-shadow: 3px 3px 1px #da84fe;
+			text-shadow: 3px 3px 1px #1DB954;
 		}
 	}
 

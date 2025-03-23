@@ -35,13 +35,13 @@
 		return fetch(url, {
 			method: 'DELETE',
 			headers: {
-				Authorization: `Bearer ${localStorage.getItem('token')}`	
+				Authorization: `Bearer ${localStorage.getItem('token')}`
 			},
 			body: JSON.stringify({
 				playlist_uuid: $page.params.slug,
 				song_uri: id
 			})
-		})	
+		})
 			.then((response) => response.json())
 			.then(() => {
 				const playlistId = $page.params.slug;
@@ -136,14 +136,14 @@
 	<Tabs.Root>
 		<Tabs.List class="flex w-full border-b border-gray-300">
 			<Tabs.Trigger
-				class="flex-1 p-3 text-center text-gray-600 transition-colors duration-200 data-[state=active]:border-b-2 data-[state=active]:border-[#6834F7] data-[state=active]:text-[#6834F7]"
+				class="flex-1 p-3 text-center text-gray-600 transition-colors duration-200 data-[state=active]:border-b-2 data-[state=active]:border-[#1DB954] data-[state=active]:text-[#1DB954]"
 				value="accepted"
 			>
 				Playlists
 			</Tabs.Trigger>
 			{#if isOwner}
 				<Tabs.Trigger
-					class="flex-1 p-3 text-center text-gray-600 transition-colors duration-200 data-[state=active]:border-b-2 data-[state=active]:border-[#6834F7] data-[state=active]:text-[#6834F7]"
+					class="flex-1 p-3 text-center text-gray-600 transition-colors duration-200 data-[state=active]:border-b-2 data-[state=active]:border-[#1DB954] data-[state=active]:text-[#1DB954]"
 					value="submitted"
 				>
 					Requests

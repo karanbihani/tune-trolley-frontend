@@ -115,7 +115,7 @@
 
 <div class="m-8 flex flex-col md:m-24">
 	<div class="flex flex-row justify-between">
-		<h1 class="text-2xl font-extrabold md:text-4xl" style="text-shadow: 2px 2px 0px #5822EE;">
+		<h1 class="text-2xl font-extrabold md:text-4xl" style="text-shadow: 2px 2px 0px #1DB954;">
 			Home
 		</h1>
 		<AddSong {createEvent} bind:name />
@@ -130,7 +130,7 @@
 		{:else}
 			{#each events.owner as event (event.playlist_id)}
 				<div
-					class="event-container mb-4 flex flex-col justify-between rounded-lg border border-white/10 bg-[#5822EE] p-4 md:flex-row md:items-center"
+					class="event-container mb-4 flex flex-col justify-between rounded-lg border border-white/10 bg-[#1DB954] p-4 md:flex-row md:items-center"
 				>
 					<div class="mb-4 flex flex-row gap-4 md:mb-0">
 						<Avatar name={event.name} imageUrl={event.image_url} />
@@ -146,7 +146,7 @@
 						<ShowCode {event} isOwner={true} />
 						<Button.Root
 							on:click={() => gotoEventPage(event, true)}
-							class="h-full w-full items-center rounded-lg bg-white p-2 px-4 font-semibold text-[#5822EE] transition hover:bg-gray-300 md:w-auto"
+							class="h-full w-full items-center rounded-lg bg-white p-2 px-4 font-semibold text-[#1DB954] transition hover:bg-gray-300 md:w-auto"
 						>
 							Manage Songs
 						</Button.Root>
@@ -181,7 +181,7 @@
 		{:else}
 			{#each events.member as event}
 				<div
-					class="event-container mb-4 flex flex-col justify-between rounded-lg border border-[#5822EE] bg-white p-4 md:flex-row md:items-center"
+					class="event-container mb-4 flex flex-col justify-between rounded-lg border border-[#1DB954] bg-white p-4 md:flex-row md:items-center"
 				>
 					<div class="mb-4 flex flex-row items-center gap-4 md:mb-0">
 						<Avatar name={event.name} imageUrl={event.image_url} />
@@ -197,7 +197,7 @@
 						<ShowCode {event} isOwner={false} />
 						<Button.Root
 							on:click={() => gotoEventPage(event, false)}
-							class="h-full w-full items-center rounded-lg bg-[#5822EE] p-2 px-4 font-semibold text-white transition hover:bg-[#3730a3] md:w-auto"
+							class="h-full w-full items-center rounded-lg bg-[#1DB954] p-2 px-4 font-semibold text-white transition hover:bg-[#3730a3] md:w-auto"
 						>
 							View Songs
 						</Button.Root>
@@ -206,7 +206,7 @@
 							on:click={() => gotoAddPage(event.playlist_code)}
 							aria-label="Add Playlist"
 						>
-							<ListPlus size={20} color="#5822EE" />
+							<ListPlus size={20} color="#1DB954" />
 						</button>
 					</div>
 				</div>

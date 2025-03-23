@@ -55,7 +55,7 @@
 	/>
 	<div
 		class="text-shadow-md font-gotham mb-10 text-2xl font-bold leading-5 tracking-tighter text-white sm:text-3xl md:text-4xl lg:text-5xl"
-		style="text-shadow: 0px 2px 0px #DA84FE;"
+		style="text-shadow: 0px 2px 0px #1DB954;"
 	>
 		Join an event by entering the event code below.
 	</div>
@@ -67,7 +67,7 @@
 	/>
 	<button
 		onclick={() => joinEvent()}
-		class="mb-8 rounded-lg bg-[#5822EE] px-8 py-2 text-white transition hover:bg-[#3730a3]"
+		class="mb-8 rounded-lg bg-[#1DB954] px-8 py-2 text-white transition hover:bg-[#3730a3]"
 	>
 		Join
 	</button>

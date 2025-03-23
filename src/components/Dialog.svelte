@@ -21,7 +21,7 @@
 
 <Dialog.Root>
 	<Dialog.Trigger
-		class="flex flex-row items-center rounded-lg bg-white px-4 font-bold text-[#5822EE] transition hover:bg-gray-300"
+		class="flex flex-row items-center rounded-lg bg-white px-4 font-bold text-[#1DB954] transition hover:bg-gray-300"
 		><Plus class="mr-2 font-bold" />Add an Event</Dialog.Trigger
 	>
 	<Dialog.Portal>
