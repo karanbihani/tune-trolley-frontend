@@ -28,15 +28,3 @@
 		class="rounded-full px-4 py-4 transition hover:bg-[#DA84FE]/30"><X /></Button.Root
 	>
 </div>
-
-<div class="flex flex-col" in:fade={{ duration: 300 }}>
-	<Button.Root class="mx-2 my-4 rounded-full px-8 py-4 transition hover:bg-[#DA84FE]/30"
-		>Home</Button.Root
-	>
-	<Button.Root class="mx-2 my-4 rounded-full px-8 py-4 transition hover:bg-[#DA84FE]/30"
-		>About</Button.Root
-	>
-	<Button.Root class="mx-2 my-4 rounded-full px-8 py-4 transition hover:bg-[#DA84FE]/30"
-		>Contact Us</Button.Root
-	>
-</div>

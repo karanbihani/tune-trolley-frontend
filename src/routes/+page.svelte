@@ -3,51 +3,9 @@
 	import star from '$lib/assets/star-top-left.svg';
 	import spring from '$lib/assets/tilted-spring-below-left.svg';
 	import band from '$lib/assets/the-band-crotchet-below-left.svg';
-	import amoeba from '$lib/assets/amoeba-below-right.svg';
-	import home_bottom from '$lib/assets/home_bottom.svg';
-	import logo from '$lib/assets/logo.svg';
-	import neon_wave from '$lib/assets/neon_wave.svg';
-	import band2 from '$lib/assets/band-dotted-minim.svg';
-	import thumb1 from '$lib/assets/thumb1.svg';
-	import star1 from '$lib/assets/star1.svg';
-	import thumb2 from '$lib/assets/thumb2.svg';
-	import flower from '$lib/assets/flower.svg';
-	import thumb3 from '$lib/assets/thumb3.svg';
 	import star_grey from '$lib/assets/star-grey.svg';
-	import git from '$lib/assets/git.svg';
-	import insta from '$lib/assets/social.svg';
-	import x from '$lib/assets/x.svg';
-	import yt from '$lib/assets/yt.svg';
-	import tele from '$lib/assets/tele.svg';
-
 	import LoginButton from '../components/LoginButton.svelte';
 	import { goto } from '$app/navigation';
-	import { Button } from 'bits-ui';
-
-	function navigateToSection(id: string): void {
-		const element = document.getElementById(id);
-
-		if (element) {
-			const targetY = element.getBoundingClientRect().top + window.scrollY;
-			const startY = window.scrollY;
-			const distance = targetY - startY;
-			const startTime = performance.now();
-
-			function scrollStep(currentTime: number) {
-				const elapsed = currentTime - startTime;
-				const progress = Math.min(elapsed / 1000, 1);
-				const easeInOutQuad =
-					progress < 0.5 ? 2 * progress * progress : -1 + (4 - 2 * progress) * progress;
-
-				window.scrollTo(0, startY + distance * easeInOutQuad);
-
-				if (progress < 1) {
-					requestAnimationFrame(scrollStep);
-				}
-			}
-			requestAnimationFrame(scrollStep);
-		}
-	}
 
 	onMount(async () => {
 		let token = localStorage.getItem('token');
